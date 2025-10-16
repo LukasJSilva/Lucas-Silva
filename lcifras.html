@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>LCifras</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="imagens/foto-perfil.jpg" alt="Foto de Lucas José Gomes da Silva" class="foto-perfil" />
+      <div class="header-text">
+        <h1>Lucas José Gomes da Silva</h1>
+        <nav class="menu">
+          <a href="index.html">Voltar à Página Inicial</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+    <h2 class="project-title">LCifras - 1° Semestre</h2>
+      <h2>Descrição</h2>
+      <ul>
+        <li>Plataforma de cifras online com biblioteca ampla e atualizada, cobrindo diversos gêneros musicais.
+        Possui interface intuitiva, vídeos tutoriais, dicas técnicas e comunidade interativa, abrangendo uma ampla 
+        variedade de gêneros musicais e artistas, desde 
+        clássicos do rock até os mais recentes sucessos pop.</li>
+        <li>Tecnologias: HTML, CSS e JavaScript.</li>
+        <li>Contribuição: desenvolvimento completo (estrutura, design e funcionalidades).</li>
+        <li>Estado: projeto acadêmico inicial, criado em 2023 para a disciplina de Desenvolvimento Web I e composição
+            de nota de Projeto Interdisciplinar.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Link para o repositório oficial</h2>
+      <div class="contact-links">
+      <ul>
+        <li><a href="https://github.com/LukasJSilva/lcifras" target="_blank">Repositório no GitHub</a></li>
+      </ul>
+      </div>
+    </section>
+
+    <section>
+  <h2>Imagens do Projeto</h2>
+  <div class="gallery">
+    <img src="imagens/print1.png" alt="Print 1" class="thumb">
+    <img src="imagens/print2.png" alt="Print 2" class="thumb">
+    <img src="imagens/print3.png" alt="Print 3" class="thumb">
+    <img src="imagens/print4.png" alt="Print 4" class="thumb">
+    <img src="imagens/print5.png" alt="Print 5" class="thumb">
+  </div>
+</section>
+
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" src="" alt="Print Ampliado">
+</div>
+
+
+  <footer>
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/in/lucasjosegsilva" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/LukasJSilva" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p>© 2025 Lucas Silva</p>
+  </footer>
+
+  <script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.querySelector('.lightbox-img');
+  const closeBtn = document.querySelector('.lightbox .close');
+  const thumbs = document.querySelectorAll('.gallery .thumb');
+
+  thumbs.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = thumb.src;
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  lightbox.addEventListener('click', e => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
+
+
+</body>
+</html>

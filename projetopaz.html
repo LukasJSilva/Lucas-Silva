@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Projeto Paz</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="imagens/foto-perfil.jpg" alt="Foto de Lucas José Gomes da Silva" class="foto-perfil" />
+      <div class="header-text">
+        <h1>Lucas José Gomes da Silva</h1>
+        <nav class="menu">
+          <a href="index.html">Voltar à Página Inicial</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+   <section>
+    <h2 class="project-title">Projeto Paz - 5° Semestre</h2>
+      <h2>Descrição</h2>
+      <ul>
+  <p>
+    O <strong>Projeto Paz</strong> é uma plataforma mobile responsiva, criada em <em>React Native</em>, 
+    com o objetivo de otimizar a contabilidade e a gestão das vendas informais em eventos religiosos, 
+    especialmente em igrejas locais. 
+    A solução automatiza o registro de vendas, o controle de estoque, a visualização de pedidos em tempo real 
+    e a geração de relatórios, eliminando métodos manuais e promovendo a profissionalização das atividades.
+  </p>
+
+  <h3>Minhas Contribuições</h3>
+  <ul>
+    <li>Atuação em Engenharia de Software, realizando a criação de diagramas de sequência, casos de uso, classes
+         e arquitetural para apoiar o desenvolvimento.</li>
+    <li>Produção de documentação colaborativa e elaboração de relatórios semanais das sprints.</li>
+    <li>Organização e montagem de apresentações para a equipe e stakeholders.</li>
+  </ul>
+
+  <h3>Tecnologias Utilizadas</h3>
+  <ul>
+    <li><strong>Mobile:</strong> React Native</li>
+    <li><strong>Front-End:</strong> HTML, CSS, JavaScript, Bootstrap, Figma</li>
+    <li><strong>Back-End:</strong> PHP, JSON, Ngrok, Token JWT, Docker, AWS S3</li>
+    <li><strong>Banco de Dados:</strong> MySQL, BrModelo</li>
+    <li><strong>Engenharia de Software:</strong> LucidChart, Word Online, Stackedit</li>
+    <li><strong>Ferramentas Gerais:</strong> GitHub, VSCode, Discord</li>
+  </ul>
+</section>
+
+
+    <section>
+      <h2>Link para o repositório oficial</h2>
+      <div class="contact-links">
+      <ul>
+        <li><a href="https://github.com/SpringDevsFatec/PI_ProjetoPaz" target="_blank">Repositório no GitHub</a></li>
+      </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Vídeo de Demonstração do Sistema</h2>
+      <p>Assista à apresentação e demonstração das funcionalidades do Projeto Paz:</p>
+      <div class="contact-links">
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=nCjJSFAlklc" target="_blank">Acessar vídeo de demonstração no YouTube</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+  <h2>Imagens do Projeto</h2>
+  <div class="gallery">
+    <img src="imagens/print23.png" alt="Print 23" class="thumb">
+    <img src="imagens/print24.png" alt="Print 24" class="thumb">
+    <img src="imagens/print25.png" alt="Print 25" class="thumb">
+    <img src="imagens/print26.png" alt="Print 26" class="thumb">
+    <img src="imagens/print27.png" alt="Print 27" class="thumb">
+    <img src="imagens/print28.png" alt="Print 28" class="thumb">
+  </div>
+</section>
+
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" src="" alt="Print Ampliado">
+</div>
+
+  <footer>
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/in/lucasjosegsilva" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/LukasJSilva" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p>© 2025 Lucas Silva</p>
+  </footer>
+
+  <script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.querySelector('.lightbox-img');
+  const closeBtn = document.querySelector('.lightbox .close');
+  const thumbs = document.querySelectorAll('.gallery .thumb');
+
+  thumbs.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = thumb.src;
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  lightbox.addEventListener('click', e => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
+
+
+</body>
+</html>

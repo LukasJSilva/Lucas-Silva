@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>SpringToys</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="imagens/foto-perfil.jpg" alt="Foto de Lucas José Gomes da Silva" class="foto-perfil" />
+      <div class="header-text">
+        <h1>Lucas José Gomes da Silva</h1>
+        <nav class="menu">
+          <a href="index.html">Voltar à Página Inicial</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+    <h2 class="project-title">SpringToys - 3° Semestre</h2>
+      <h2>Descrição</h2>
+      <ul>
+        <p>
+    O SpringToys é um projeto de desenvolvimento de software voltado para a criação de uma plataforma de comércio 
+    eletrônico dedicada a uma loja online de brinquedos. Seu principal objetivo é proporcionar uma experiência de 
+    compra digital prática, intuitiva e agradável, permitindo que os clientes possam explorar, selecionar e adquirir 
+    uma ampla variedade de brinquedos com comodidade e segurança.
+    A iniciativa busca atender à crescente demanda por soluções inovadoras no comércio eletrônico, oferecendo uma 
+    plataforma moderna que alia tecnologia, usabilidade e eficiência.
+  </p>
+
+  <h3>Minha Contribuição</h3>
+  <ul>
+    <li>
+      Minha participação no projeto concentrou-se principalmente na parte de banco de dados e documentação. Entre minhas 
+      responsabilidades, estão:
+      <ul>
+        <li>Pesquisa de referências em sites especializados para aprimorar a concepção da plataforma;</li>
+        <li>Coleta e organização das imagens dos produtos para compor o catálogo online;</li>
+        <li>Criação e estruturação das tabelas e registros no banco de dados, incluindo descrições, preços 
+            e informações dos brinquedos;</li>
+        <li>Apoio na documentação técnica e de suporte;</li>
+        <li>Elaboração da apresentação final do projeto.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>Tecnologias Utilizadas</h3>
+  <ul>
+    <li>
+      Front-End:
+      <ul>
+        <li>HTML, CSS, JavaScript, SweetAlert.</li>
+      </ul>
+    </li>
+    <li>
+      Back-End:
+      <ul>
+        <li>Java, Spring Boot.</li>
+      </ul>
+    </li>
+    <li>
+      Banco de Dados:
+      <ul>
+        <li>MySQL.</li>
+      </ul>
+    </li>
+    <li>
+      Controle e colaboração:
+      <ul>
+        <li>Git, GitHub, VS Code, Spring Tools 4, Discord, Imgur.</li>
+      </ul>
+    </li>
+  </ul>
+        
+    </section>
+
+    <section>
+      <h2>Link para o repositório oficial</h2>
+      <div class="contact-links">
+      <ul>
+        <li><a href="https://github.com/nasc2005/SpringToys" target="_blank">Repositório no GitHub</a></li>
+      </ul>
+      </div>
+    </section>
+
+    <section>
+  <h2>Imagens do Projeto</h2>
+  <div class="gallery">
+    <img src="imagens/print11.png" alt="Print 11" class="thumb">
+    <img src="imagens/print12.png" alt="Print 12" class="thumb">
+    <img src="imagens/print13.png" alt="Print 13" class="thumb">
+    <img src="imagens/print14.png" alt="Print 14" class="thumb">
+    <img src="imagens/print15.png" alt="Print 15" class="thumb">
+    <img src="imagens/print16.png" alt="Print 16" class="thumb">
+  </div>
+</section>
+
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" src="" alt="Print Ampliado">
+</div>
+
+
+  <footer>
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/in/lucasjosegsilva" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/LukasJSilva" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p>© 2025 Lucas Silva</p>
+  </footer>
+
+  <script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.querySelector('.lightbox-img');
+  const closeBtn = document.querySelector('.lightbox .close');
+  const thumbs = document.querySelectorAll('.gallery .thumb');
+
+  thumbs.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = thumb.src;
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  lightbox.addEventListener('click', e => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
+
+
+</body>
+</html>
