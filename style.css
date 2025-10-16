@@ -151,6 +151,28 @@ section h2 {
   color: #2563eb;
 }
 
+/* Cursos de Extensão */
+.cursos-extensao {
+  margin-top: 20px;
+}
+
+.cursos-extensao h3 {
+  font-size: 1.2rem;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.cursos-extensao ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.cursos-extensao ul li {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  color: #2d3748;
+}
+
 .link-projetos {
   margin-top: 15px;
   color: #2563eb;
@@ -304,3 +326,4 @@ footer {
     font-size: 24px;
   }
 }
+
